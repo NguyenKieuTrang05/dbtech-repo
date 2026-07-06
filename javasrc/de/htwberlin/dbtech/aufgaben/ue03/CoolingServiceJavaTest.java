@@ -1,7 +1,8 @@
 package de.htwberlin.dbtech.aufgaben.ue03;
 
-import java.io.File;
-
+import de.htwberlin.dbtech.exceptions.CoolingSystemException;
+import de.htwberlin.dbtech.utils.DbCred;
+import de.htwberlin.dbtech.utils.DbUnitUtils;
 import org.dbunit.Assertion;
 import org.dbunit.DatabaseUnitException;
 import org.dbunit.IDatabaseTester;
@@ -19,9 +20,7 @@ import org.junit.runners.MethodSorters;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import de.htwberlin.dbtech.exceptions.CoolingSystemException;
-import de.htwberlin.dbtech.utils.DbCred;
-import de.htwberlin.dbtech.utils.DbUnitUtils;
+import java.io.File;
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class CoolingServiceJavaTest {
